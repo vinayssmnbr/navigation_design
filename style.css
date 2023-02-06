@@ -1,184 +1,124 @@
-*,*::after,*::before{
-    margin:0px;
-    padding:0;
-    box-sizing:border-box
-  }
-  body{
-    font-family:sans-serif;
-    font-size:14px;
-    color:#222;
-    line-height:1.4;
-  }
-  a{
-    text-decoration:none;
-  }
-  nav{
-    float:left;
-    width:100%;
-    background:#222
-    
-  }
-  nav li{
-    float:left
-  }
-  li{
-    display:list-item
-  }
-  nav li a{
-    color:white;
-    padding:10px;
-    float:left;
-    cursor:pointer;
-      transition:0.5s
-  }
-  nav ul{
-    float:left;
-    width:100%
-  }
-  
-  nav ul li{
-    float:left;
-    list-style:none;
-  }
-  
-  nav ul li a:hover{
-    background:#fff;
-    color:#222;
-  
-  }
-  .nav1{
-    background:#ddd;
-    width:auto;
-    float:right
-    
-  }
-  .nav1 ul li a{
-    color:#222;
-    padding:0;
-    margin:15px;
-  }
-  .nav1 ul li a:hover, .nav1 ul li a.active{
-    background:none;
-    color:blue;
-  }
-  nav ul li a:hover, nav ul li.active a{
-    background:#fff;
-    color:#222;
-    
-  }
-  
-  /* .nav2{
-    background:#ddd;
-    text-align:center;
-    width:100%;
-    float:left;
-  } 
-  .nav2 ul{
-    display:inline-block;
-    width:auto;
-    float:none;
-  } 
-   */
-  
-  
-  .inner_list{
-    min-width:150px;
-    background:white;
-    position:absolute;
-    top:150%;
-    border:1px solid #ddd;
-    display:none;
-    right:-40px;
-    text-align:center;
-    cursor:pointer;
-    text-align: center;
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #222;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  float: left;
+  width: 100%;
+  background: #222;
+}
+nav li {
+  float: left;
+}
+li {
+  display: list-item;
+}
+nav li a {
+  color: white;
+  padding: 10px;
+  float: left;
+  cursor: pointer;
+  transition: 0.5s;
+}
+nav ul {
+  float: left;
+  width: 100%;
+}
 
-   
-  }
-  
-  
-  ul.inner_list>li>a{
-    color:blue;
-    padding:10px;
-    float:left;
-     transition:2s;
-    
-  }
-  nav>ul>li{
-    float:left;
-    list-style:none;
-    position:relative;
-    
-  }
-  nav>ul>li:hover .inner_list{
-    display:block;
-    
-    
-     
-  }
-  
-  ul.inner_inner_list>li>a{
-    color:blue;
-    padding:10px;
-    float:left;
-    
-  }
-  
-  .inner_inner_list{
-    min-width:150px;
-    background:white;
-    position:absolute;
-    top:0%;
-    border:1px solid #ddd;
-    display:none;
-    left:118px;
-    cursor:pointer;
-   
-    
-  }
-  nav>ul>li>ul.inner_list>li:hover .inner_inner_list{
-    display:block;
-  
-  }
-  nav>ul>li>ul.inner_list>li{
-    float:left;
-    list-style:none;
-    position:relative
-  }
+nav ul li {
+  float: left;
+  list-style: none;
+}
 
+.inner_list {
+  min-width: 100px;
+  background: white;
+  position: absolute;
+  top: 150%;
+  border: 1px solid #ddd;
+  display: none;
+  right: -10px;
+  text-align: center;
+  cursor: pointer;
+}
 
-  
-  ul.inner_list> .outer_li>div{
-    border-top:20px solid transparent;
-    border-left:20px solid transparent;
-    border-right:20px solid transparent;
-    border-bottom:20px solid blue;
-    width:0px;
-    position:absolute;
-    top:-41px;
-    left:50px;
-    
-  }
+ul.inner_list > li > a {
+  color: blue;
+  padding: 10px;
+  float: left;
+  transition: 2s;
+}
+nav > ul > li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+nav > ul > li:hover .inner_list {
+  display: block;
+}
+ul.inner_inner_list > li > a {
+  color: #222;
+  padding: 10px;
+  float: left;
+}
 
-  .outer_li{
-    position:relative
-  }
- 
+.inner_inner_list {
+  min-width: 100px;
+  background: white;
+  position: absolute;
+  top: 0%;
+  border: 1px solid #ddd;
+  display: none;
+  left: 118px;
+  cursor: pointer;
+}
+nav > ul > li > ul.inner_list > li:hover .inner_inner_list {
+  display: block;
+}
+nav > ul > li > ul.inner_list > li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
 
-  .inner_li{
-    position:relative;
-  }
-  
-  ul.inner_inner_list> .inner_li>div{
-    border-top:20px solid transparent;
-    border-left:20px solid transparent;
-    border-right:20px solid blue;
-    border-bottom:20px solid transparent;
-    width:0px;
-    position:absolute;
-    top:0px;
-    right:101%;
-    
-  }
-  
-  
+ul.inner_list > .outer_li > div {
+  border-top: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid blue;
+  width: 0px;
+  position: absolute;
+  top: -41px;
+  left: 28px;
+}
+
+.outer_li {
+  position: relative;
+}
+
+.inner_li {
+  position: relative;
+}
+
+ul.inner_inner_list > .inner_li > div {
+  border-top: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid blue;
+  border-bottom: 20px solid transparent;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 101%;
+}
