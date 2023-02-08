@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.checkbox-item{
+    background:white;
+    border:2px solid blue;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    min-width:300px;
+    margin:5px;
+    float:left;
+    margin: 5px -178px 10px 188px;
+    padding:10px
+}
+.paragraph{
+    margin: 200px -178px 10px 188px;
+
+}
+
+[type=radio]{
+    cursor: pointer;
+    margin:10px;
+  }
+  button{
+    margin: 153px 0px 0px -431px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    border:1px solid blue
+}
+  button:hover{
+    background:gray;
+    border:gray
+  }
+
+
+  .container{
+    margin: 200px;
+    margin-left:100px
+  }
+.container .radio:after{
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
